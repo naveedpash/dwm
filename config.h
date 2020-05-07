@@ -5,12 +5,12 @@ static const char *fonts[] = {
 	"Ubuntu Mono derivative Powerline:size=17"
 };
 static const char dmenufont[]       = "Ubuntu Mono derivative Powerline:size=17";
-static const char normbordercolor[] = "#ff8400";
-static const char normbgcolor[]     = "#000000";
-static const char normfgcolor[]     = "#f77000";
-static const char selbordercolor[]  = "#ffd000";
-static const char selbgcolor[]      = "#ffd000";
-static const char selfgcolor[]      = "#000000";
+static const char normbordercolor[] = "#1d2021";
+static const char normbgcolor[]     = "#1d2021";
+static const char normfgcolor[]     = "#d65d0e";
+static const char selbordercolor[]  = "#fabd2f";
+static const char selbgcolor[]      = "#fabd2f";
+static const char selfgcolor[]      = "#282828";
 static unsigned int baralpha        = 0xd0;
 static unsigned int borderalpha     = 0xd0;
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -66,8 +66,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Tab,    spawn,          {.v = dmenuswitch } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
-	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
+	{ MODKEY,                       XK_n,      focusstack,     {.i = +1 } },
+	{ MODKEY,                       XK_e,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
